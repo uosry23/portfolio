@@ -28,7 +28,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" className="text-2xl font-bold text-indigo-600 dark:text-indigo-400 transition-all duration-300 hover:text-indigo-500">
-              Portfolio
+              Y_Portfolio
             </a>
           </div>
 
