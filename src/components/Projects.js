@@ -4,6 +4,7 @@ import Gloo from '../assests/gloo-market.vercel.app_ (2).png';
 import araby from '../assests/3araby.vercel.app_ (3).png'
 import male from '../assests/male-fashion-nu.vercel.app_.png'
 import movie from '../assests/movie-khaki-nu.vercel.app_ (1).png'
+import Sodfa from '../assests/Sodfa.png'
 const Projects = () => {
   // Project data
   const projects = [
@@ -36,12 +37,12 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: 'Male Fashion',
-      description: 'Designed a men’s clothing platform with React.js. Focused on stylish UI, mobile responsiveness, and smooth browsing experience.',
-      tags: ['React.js', 'Mobile Optimization', 'E-commerce', 'UI/UX Design'],
-      image: male,
-      demoLink: 'https://male-fashion-nu.vercel.app/',
-      codeLink: 'https://github.com/uosry23/male-fashion', // Replace with actual if exists
+      title: 'Sodfa',
+      description: 'Sodfa is a dynamic storytelling platform built with Next.js and Firebase, allowing users to share and discover spontaneous life moments. It features real-time updates and a seamless, responsive design for an engaging user experience.',
+      tags: ['React.js', 'Mobile Optimization', 'firebase', 'UI/UX Design'],
+      image: Sodfa,
+      demoLink: 'https://sodfa.vercel.app/',
+      codeLink: 'https://github.com/uosry23/Sodfa.git', // Replace with actual if exists
     },
   ];
 

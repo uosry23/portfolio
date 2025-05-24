@@ -48,7 +48,6 @@ function App() {
       <Contact />
       <Footer />
 
-      {/* Dark mode toggle button */}
       <button
         onClick={toggleDarkMode}
         className="fixed bottom-6 right-6 p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-lg z-50 transition-all duration-300 hover:scale-110"
