@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import DownloadCVButton from '../Cv';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -94,11 +95,13 @@ const Hero = () => {
                 View My Work
               </a>
               <a
-                href="#contact"
-                className="px-6 py-3 border border-indigo-600 text-indigo-600 dark:text-indigo-400 dark:border-indigo-400 font-medium rounded-lg hover:bg-indigo-50 dark:hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"
+                href="/Resume.pdf"
+                download="Yousry_CV.pdf"  // اسم الملف اللي هينزل به
+                className="px-6 py-3 outline outline-indigo-400  text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
               >
-                Contact Me
+                Download Cv
               </a>
+
             </div>
 
             {/* Tech stack badges */}
