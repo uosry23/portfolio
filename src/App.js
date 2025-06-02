@@ -48,7 +48,7 @@ function App() {
       {/* <Contact /> */}
       <Footer />
 
-      {/* <button
+      <button
         onClick={toggleDarkMode}
         className="fixed bottom-6 right-6 p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-lg z-50 transition-all duration-300 hover:scale-110"
         aria-label="Toggle dark mode"
@@ -62,7 +62,7 @@ function App() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
           </svg>
         )}
-      </button> */}
+      </button>
     </div>
   );
 }
