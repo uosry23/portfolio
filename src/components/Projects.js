@@ -51,18 +51,19 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedElement animation="fade-up">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">My Projects</h2>
-            <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">My Projects</h2>
+            <p className="max-w-2xl mx-auto text-sm md:text-lg text-gray-600 dark:text-gray-300">
               Here are some of my featured projects showcasing my skills in React.js, Next.js, Redux, and other modern web technologies.
             </p>
           </div>
         </AnimatedElement>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {projects.map((project, index) => (
             <AnimatedElement
               key={project.id}
               animation="fade-up"
+              className="mb-8"
               delay={(index % 2) * 200}
               className="h-full"
             >
@@ -132,3 +133,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
