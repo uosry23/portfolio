@@ -4,11 +4,13 @@ import AnimatedElement from './AnimatedElement';
 const About = () => {
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto  sm:px-2 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto sm:px-2 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-12 items-center">
+
           {/* Visual Code Element Side */}
           <AnimatedElement animation="fade-right">
             <div className="relative">
+
               {/* Decorative elements */}
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-indigo-200 dark:bg-indigo-900/30 rounded-full filter blur-xl opacity-70 animate-pulse"></div>
               <div className="absolute -bottom-8 -right-15 w-40 h-40 bg-purple-200 dark:bg-purple-900/30 rounded-full filter blur-xl opacity-70 animate-pulse" style={{ animationDelay: '1s' }}></div>
@@ -24,7 +26,7 @@ const About = () => {
                   <div className="mx-auto text-gray-400 text-xs font-mono">developer.js</div>
                 </div>
 
-                <div className="p-4 font-mono text-sm text-left h-full" style={{ minHeight: '400px' }}>
+                <div className="p-4 font-mono text-sm text-left h-full overflow-x-auto" style={{ minHeight: '400px' }}>
                   <div className="text-blue-400">class <span className="text-green-400">FrontEndDeveloper</span> {`{`}</div>
                   <div className="pl-6 text-yellow-300">constructor<span className="text-white">()</span> {`{`}</div>
                   <div className="pl-10 text-white">this.<span className="text-purple-400">name</span> = <span className="text-orange-400">"Yousry Ahmed"</span>;</div>
@@ -58,7 +60,7 @@ const About = () => {
                 </div>
 
                 {/* Experience badge */}
-                <div className="absolute top-6 right-6 bg-white dark:bg-gray-800 rounded-full shadow-lg px-4 py-2 flex items-center">
+                <div className="absolute top-6 right-6 bg-white dark:bg-gray-800 rounded-full shadow-lg px-4 py-2 flex items-center hidden sm:flex">
                   <span className="text-indigo-600 dark:text-indigo-400 font-bold text-lg mr-1">3+</span>
                   <span className="text-gray-700 dark:text-gray-300 text-sm">Years Experience</span>
                 </div>
@@ -66,8 +68,7 @@ const About = () => {
             </div>
           </AnimatedElement>
 
-          {/* Text Content Side */}
-          <AnimatedElement animation="fade-left" delay={200}>
+          <div animation="fade-left" >
             <div className='p-2'>
               <h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">About Me</h2>
 
@@ -115,11 +116,10 @@ const About = () => {
               </div>
 
             </div>
-          </AnimatedElement>
+          </div>
         </div>
       </div>
     </section>
-
   );
 };
 
