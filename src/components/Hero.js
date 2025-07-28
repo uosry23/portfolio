@@ -97,7 +97,7 @@ const Hero = () => {
               <a
                 href="/Resume.pdf"
                 download="Yousry_CV.pdf"  // اسم الملف اللي هينزل به
-                className="px-6 py-3 outline outline-indigo-400  text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                className="px-6 py-3 outline outline-indigo-400   dark:text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
               >
                 Download Cv
               </a>
